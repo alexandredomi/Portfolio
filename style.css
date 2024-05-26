@@ -1,32 +1,31 @@
 :root{
-    --background-branco-escuro: #f0f3f4;
+    --background-branco-escuro: #f0f2f5;
     --background-branco-claro: #ffffff;
-    --background-preto-claro: #2c2d2d;
-    --background-preto-escuro: #1c1c1c;
-    --cor-roxa: #b16cea;
-    --cor-vermelha: #f85f75;
-    --cor-amarela: #fea14f;
+    --background-preto-claro: #1c1c22;
+    --background-preto-escuro: #161513;
     --cor-icones-bgbranco-: #4d4d4d;
-    --cor-gradiente-:linear-gradient(99deg, rgba(177,108,234,1) 25%, rgba(248,95,117,1) 50%, rgba(254,161,79,1) 75%);
+
+    --cor-gradiente-:linear-gradient(90deg, rgba(177,108,234,1) 20%, rgba(255,94,105,1) 40%, rgba(255,138,86,1) 60%, rgba(255,168,75,1) 80%);;
+
     --shadow-color: 0deg 0% 59%;
-  --shadow-elevation-low:
-    0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
-    0px 0.4px 0.5px -1.2px hsl(var(--shadow-color) / 0.34),
-    0px 1.1px 1.2px -2.5px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-medium:
-    0px 0.3px 0.3px hsl(var(--shadow-color) / 0.36),
-    0px 0.9px 1px -0.8px hsl(var(--shadow-color) / 0.36),
-    0px 2.2px 2.5px -1.7px hsl(var(--shadow-color) / 0.36),
-    0.1px 5.3px 6px -2.5px hsl(var(--shadow-color) / 0.36);
-  --shadow-elevation-high:
-    0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
-    0px 1.5px 1.7px -0.4px hsl(var(--shadow-color) / 0.34),
-    0.1px 2.9px 3.3px -0.7px hsl(var(--shadow-color) / 0.34),
-    0.1px 4.7px 5.3px -1.1px hsl(var(--shadow-color) / 0.34),
-    0.1px 7.5px 8.4px -1.4px hsl(var(--shadow-color) / 0.34),
-    0.2px 11.7px 13.2px -1.8px hsl(var(--shadow-color) / 0.34),
-    0.3px 17.8px 20px -2.1px hsl(var(--shadow-color) / 0.34),
-    0.5px 26.3px 29.6px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-low:
+        0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
+        0px 0.4px 0.5px -1.2px hsl(var(--shadow-color) / 0.34),
+        0px 1.1px 1.2px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+        0px 0.3px 0.3px hsl(var(--shadow-color) / 0.36),
+        0px 0.9px 1px -0.8px hsl(var(--shadow-color) / 0.36),
+        0px 2.2px 2.5px -1.7px hsl(var(--shadow-color) / 0.36),
+        0.1px 5.3px 6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+        0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
+        0px 1.5px 1.7px -0.4px hsl(var(--shadow-color) / 0.34),
+        0.1px 2.9px 3.3px -0.7px hsl(var(--shadow-color) / 0.34),
+        0.1px 4.7px 5.3px -1.1px hsl(var(--shadow-color) / 0.34),
+        0.1px 7.5px 8.4px -1.4px hsl(var(--shadow-color) / 0.34),
+        0.2px 11.7px 13.2px -1.8px hsl(var(--shadow-color) / 0.34),
+        0.3px 17.8px 20px -2.1px hsl(var(--shadow-color) / 0.34),
+        0.5px 26.3px 29.6px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 *{
     padding: 0;
@@ -43,13 +42,16 @@ header{
     background-color: var(--background-branco-escuro);
     position: fixed;
     width: 100%;
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-low);
 }
 header .center{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 15px;
+}
+header .center ul{
+    display: none;
 }
 header .center .logo h1{
     font-weight: 400;
@@ -89,7 +91,7 @@ main{
     margin: 0px auto;
 }
 main .home{
-    padding: 90px 15px;
+    padding: 110px 15px 60px;
 }
 main .home .center{
     display: flex;
@@ -99,15 +101,17 @@ main .home .center{
     text-align: center;
 }
 main .home .center img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin: 50px 0px 20px;
+    margin: 30px 0px 20px;
+    box-shadow: var(--shadow-elevation-medium);
 }
 main .home .center .tituloHome{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
-    
+    padding: 20px 0px 10px;
+    text-align: start;
 }
 main .home .center .tituloHome span{
     font-weight: 600;
@@ -123,29 +127,38 @@ main .home .center p{
     font-size: 22px;
     font-weight: 400;
     max-width: 500px;
+    text-align: start;
+}
+main .home .center .botoesHome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 main .home .center .colorido{
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     border: none;
     padding: 20px 40px;
     border-radius: 40px;
     background: var(--cor-gradiente-);
     cursor: pointer;
     box-shadow: var(--shadow-elevation-low);
+    color: var(--background-preto-escuro);
 }
 main .home .center .colorido:hover{
     box-shadow: var(--shadow-elevation-medium);
     transition: 0.4s;
 }
 main .home .center button{
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 22px;
+    font-weight: 600;
     border: none;
     padding: 20px 40px;
     border-radius: 40px;
-    border: solid 2px var(--background-preto-escuro);
+    border: solid 1px var(--background-preto-escuro);
     margin: 10px 5px;
+    color: var(--background-preto-escuro);
 }
 main .home .center button:hover{
     box-shadow: var(--shadow-elevation-medium);
@@ -159,6 +172,7 @@ main .projetos .textProjetos{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    text-align: start;
 }
 main .projetos .textProjetos h2{
     font-size: 40px;
@@ -185,21 +199,20 @@ main .projetos .cardsProjetos{
 main .projetos .cardsProjetos .card{
     width: 90%;
     max-width: 400px;
-    border-radius: 20px;
-    padding: 20px 10px;
+    border-radius: 12px;
+    /* padding: 20px 10px; */
     background-color: var(--background-branco-claro);
     box-shadow: var(--shadow-elevation-medium);
 }
 main .projetos .cardsProjetos .card img{
     width: 100%;
+    border-radius: 12px 12px 0px 0px;
 }
 main .projetos .cardsProjetos .card .cardText{
-    padding: 20px 0px;
+    padding: 20px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
     gap: 10px;
 }
 main .projetos .cardsProjetos .card .cardText h3{
@@ -215,9 +228,8 @@ main .vantagens{
 main .vantagens .textVantagens{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px 15px;
-    text-align: center;
+    padding: 0px 15px;
+    text-align: start;
 }
 main .vantagens .textVantagens h2{
     font-size: 40px;
@@ -245,29 +257,29 @@ main .vantagens .cardsVantagens .card{
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+    /* align-items: center;
+    text-align: center; */
+    gap: 15px;
     border: solid 1px var(--background-preto-claro);
     border-radius: 20px;
-    padding: 40px 10px;
-    /* background-color: var(--background-branco-escuro); */
+    padding: 40px 20px;
     box-shadow: var(--shadow-elevation-medium);
 }
 main .vantagens .cardsVantagens .card img{
-    width: 50px;
+    width: 40px;
+    padding: 0px;
 }
 main .vantagens .cardsVantagens .card h3{
     font-size: 28px;
 }
 main .vantagens .cardsVantagens .card p{
     font-size: 20px;
-    padding: 0px 10px;
 }
 main .local{
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
+
 }
 main .local .textLocal{
     padding: 60px 15px 20px 15px;
@@ -286,12 +298,12 @@ main .local .mapaLocal{
 }
 main .local .textLocalFinal p{
     display: flex;
-    flex-direction: column;
-    padding: 20px 0px 60px 0px;
+    justify-content: center;
+    padding: 20px 15px 60px 15px;
 }
 @media screen and (min-width: 760px) {
     main .vantagens .cardsVantagens .card{
-        height: 500px;
-        justify-content: center;
+        height: 400px;
+        justify-content: start;
     }
 }

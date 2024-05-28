@@ -1,6 +1,6 @@
 :root{
     --background-branco-escuro: #f0f2f5;
-    --background-branco-menu-mobile: #f0f2f5e8;
+    --background-branco-menu-mobile: #f0f2f5f3;
     --background-branco-claro: #ffffff;
     --background-preto-claro: #1c1c22;
     --background-preto-escuro: #161513;
@@ -79,10 +79,12 @@ header .center .container-bamburguer{
 header .center .container-bamburguer button{
     border: none;
     cursor: pointer;
+    background-color: transparent;
 }
 header .center .container-bamburguer button img{
     width: 30px;
     height: 30px;
+    color: #4d4d4d;
 }
 .center .container-bamburguer .divMenor{
     width: 30px;
@@ -119,14 +121,13 @@ main #home{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 .menuMobile ul li a{
     text-decoration: none;
     color: #161513;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
-    border-bottom: #959595 solid 1px ;
 }
 .menuMobile .containerBtnClose{
     width: 100%;
@@ -136,10 +137,33 @@ main #home{
 }
 .menuMobile .containerBtnClose button{
     border: transparent;
-    padding: 20px 20px 0px 0px;
+    padding: 20px 10px 0px 0px;
 }
 .menuMobile .containerBtnClose button img{
-    width: 30px; 
+    width: 35px;
+}
+.menuMobile ul div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+.menuMobile ul div img{
+    width: 30px;
+}
+.menuMobile .contateMenuMobile{
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    background: var(--cor-gradiente-);
+    cursor: pointer;
+    box-shadow: var(--shadow-elevation-low);
+    color: var(--background-preto-escuro);
+    position: absolute;  
+    bottom: 30px;
 }
 .flex{
     display: flex;

@@ -3,13 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Web Freelance</title>
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
@@ -27,14 +23,24 @@
                 <li>porque-nos</li>
             </ul>
             <div class="container-bamburguer">
-                <div></div>
-                <div class="divMenor"></div>
-                <div></div>
+                <button id="btnMenuOpen"><img src="assets/menu-de-hamburguer.svg" alt=""></button>
             </div>
         </div>
     </header>
     <main>
-        <section class="home">
+        <section id="home">
+            <div class="menuMobile">
+                <div class="containerBtnClose">
+                    <button id="btnMenuClose"><img src="assets/circulo-x.svg" alt="">
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre mim">sobre mim</a></li>
+                    <li><a href="#vantagens">porque-nos</a></li>
+                </ul>
+            </div>
             <div class="center">
                 <img src="assets/fotos/Assunto1-removebg-preview.png" alt="">
                 <p class="tituloHome"><span>Olá, sou Alexandre </span> Desenvolvedor Web.</p>
@@ -44,11 +50,10 @@
                     <button class="colorido">ENTRAR EM CONTATO</button>
                     <button>VER MEU TRABALHO</button>
                 </div>
-                
             </div>
         </section>
         <div class="linha"></div>
-        <section class="projetos">
+        <section id="projetos">
             <div class="textProjetos">
                 <h2>Meus Ultimos <span>Projetos.</span></h2>
                 <p>Serviços de desenvolvimento web personalizados para suas necessidades. Desde a concepção até a execução, cuidamos de cada detalhe do seu site.</p>
@@ -92,7 +97,7 @@
                 </div>
             </div>
         </section>
-        <section class="vantagens">
+        <section id="vantagens">
             <div class="textVantagens">
                 <h2><span>Vantagens</span> de ter um site conosco</h2>
             </div>
@@ -126,5 +131,21 @@
             </div>
         </section>
     </main>
+
+    <script>
+        const btnMenuOpen = document.querySelector("#btnMenuOpen")
+        const btnMenuClose = document.querySelector("#btnMenuClose")
+
+        const menuMobile = document.querySelector(".menuMobile")
+
+        btnMenuOpen.addEventListener("click", function() {
+            menuMobile.classList.add("flex")
+        })
+        btnMenuClose.addEventListener("click", function() {
+            menuMobile.classList.remove("flex")
+        })
+
+        console.log("deu certo")
+    </script>
 </body>
 </html>

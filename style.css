@@ -1,5 +1,6 @@
 :root{
     --background-branco-escuro: #f0f2f5;
+    --background-branco-menu-mobile: #f0f2f5e8;
     --background-branco-claro: #ffffff;
     --background-preto-claro: #1c1c22;
     --background-preto-escuro: #161513;
@@ -33,6 +34,9 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-style: normal; 
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--background-branco-escuro);
@@ -72,11 +76,13 @@ header .center .container-bamburguer{
     height: 25px;
     cursor: pointer;
 }
-header .center .container-bamburguer div{
-    width: 100%;
-    height: 3px;
-    background-color: var(--background-preto-escuro);
-    border-radius: 2px;
+header .center .container-bamburguer button{
+    border: none;
+    cursor: pointer;
+}
+header .center .container-bamburguer button img{
+    width: 30px;
+    height: 30px;
 }
 .center .container-bamburguer .divMenor{
     width: 30px;
@@ -90,30 +96,75 @@ main{
     height: 1px;
     margin: 0px auto;
 }
-main .home{
+main #home{
     padding: 110px 15px 60px;
 }
-main .home .center{
+.menuMobile{
+    background-color: var(--background-branco-menu-mobile);
+    box-shadow: var(--shadow-elevation-high);
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    z-index: 5;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: 0.8s;
+}
+.menuMobile ul{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menuMobile ul li a{
+    text-decoration: none;
+    color: #161513;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: #959595 solid 1px ;
+}
+.menuMobile .containerBtnClose{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 10px 0px;
+}
+.menuMobile .containerBtnClose button{
+    border: transparent;
+    padding: 20px 20px 0px 0px;
+}
+.menuMobile .containerBtnClose button img{
+    width: 30px; 
+}
+.flex{
+    display: flex;
+}
+main #home .center{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-main .home .center img{
+main #home .center img{
     width: 180px;
     height: 180px;
     border-radius: 50%;
     margin: 30px 0px 20px;
     box-shadow: var(--shadow-elevation-medium);
 }
-main .home .center .tituloHome{
+main #home .center .tituloHome{
     font-size: 40px;
     font-weight: 600;
     padding: 20px 0px 10px;
     text-align: start;
 }
-main .home .center .tituloHome span{
+main #home .center .tituloHome span{
     font-weight: 600;
     background-image: var(--cor-gradiente-);
     background-clip: text;
@@ -122,20 +173,20 @@ main .home .center .tituloHome span{
     color: black;
     max-width: 700px;
 }
-main .home .center p{
+main #home .center p{
     padding: 25px 0px;
     font-size: 22px;
     font-weight: 400;
     max-width: 500px;
     text-align: start;
 }
-main .home .center .botoesHome{
+main #home .center .botoesHome{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
-main .home .center .colorido{
+main #home .center .colorido{
     font-size: 22px;
     font-weight: 600;
     border: none;
@@ -146,11 +197,11 @@ main .home .center .colorido{
     box-shadow: var(--shadow-elevation-low);
     color: var(--background-preto-escuro);
 }
-main .home .center .colorido:hover{
+main #home .center .colorido:hover{
     box-shadow: var(--shadow-elevation-medium);
     transition: 0.4s;
 }
-main .home .center button{
+main #home .center button{
     font-size: 22px;
     font-weight: 600;
     border: none;
@@ -160,43 +211,43 @@ main .home .center button{
     margin: 10px 5px;
     color: var(--background-preto-escuro);
 }
-main .home .center button:hover{
+main #home .center button:hover{
     box-shadow: var(--shadow-elevation-medium);
     transition: 0.4s;
 }
-main .projetos{
+main #projetos{
     padding: 30px 15px;
 }
-main .projetos .textProjetos{
+main #projetos .textProjetos{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-align: start;
 }
-main .projetos .textProjetos h2{
+main #projetos .textProjetos h2{
     font-size: 40px;
     padding: 25px 0px;
     max-width: 700px;
 }
-main .projetos .textProjetos h2 span{
+main #projetos .textProjetos h2 span{
     background-image: var(--cor-gradiente-);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-main .projetos .textProjetos p{
+main #projetos .textProjetos p{
     font-size: 22px;
     max-width: 800px;
 }
-main .projetos .cardsProjetos{
+main #projetos .cardsProjetos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px 0px;
     gap: 40px;
 }
-main .projetos .cardsProjetos .card{
+main #projetos .cardsProjetos .card{
     width: 90%;
     max-width: 400px;
     border-radius: 12px;
@@ -204,47 +255,47 @@ main .projetos .cardsProjetos .card{
     background-color: var(--background-branco-claro);
     box-shadow: var(--shadow-elevation-medium);
 }
-main .projetos .cardsProjetos .card img{
+main #projetos .cardsProjetos .card img{
     width: 100%;
     border-radius: 12px 12px 0px 0px;
 }
-main .projetos .cardsProjetos .card .cardText{
+main #projetos .cardsProjetos .card .cardText{
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
 }
-main .projetos .cardsProjetos .card .cardText h3{
+main #projetos .cardsProjetos .card .cardText h3{
     font-size: 28px;
 }
-main .projetos .cardsProjetos .card .cardText p{
+main #projetos .cardsProjetos .card .cardText p{
     font-size: 20px;
 }
-main .vantagens{
+main #vantagens{
     display: flex;
     flex-direction: column;
 }
-main .vantagens .textVantagens{
+main #vantagens .textVantagens{
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
     text-align: start;
 }
-main .vantagens .textVantagens h2{
+main #vantagens .textVantagens h2{
     font-size: 40px;
 }
-main .vantagens .textVantagens h2 span{
+main #vantagens .textVantagens h2 span{
     background-image: var(--cor-gradiente-);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-main .vantagens{
+main #vantagens{
     background-color: var(--background-branco-claro);
     padding: 60px 0px 30px 0px;
 }
-main .vantagens .cardsVantagens{
+main #vantagens .cardsVantagens{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -252,7 +303,7 @@ main .vantagens .cardsVantagens{
     gap: 40px;
     padding: 50px 0px;
 }
-main .vantagens .cardsVantagens .card{
+main #vantagens .cardsVantagens .card{
     width: 90%;
     max-width: 350px;
     display: flex;
@@ -265,14 +316,14 @@ main .vantagens .cardsVantagens .card{
     padding: 40px 20px;
     box-shadow: var(--shadow-elevation-medium);
 }
-main .vantagens .cardsVantagens .card img{
+main #vantagens .cardsVantagens .card img{
     width: 40px;
     padding: 0px;
 }
-main .vantagens .cardsVantagens .card h3{
+main #vantagens .cardsVantagens .card h3{
     font-size: 28px;
 }
-main .vantagens .cardsVantagens .card p{
+main #vantagens .cardsVantagens .card p{
     font-size: 20px;
 }
 main .local{
@@ -302,7 +353,7 @@ main .local .textLocalFinal p{
     padding: 20px 15px 60px 15px;
 }
 @media screen and (min-width: 760px) {
-    main .vantagens .cardsVantagens .card{
+    main #vantagens .cardsVantagens .card{
         height: 400px;
         justify-content: start;
     }

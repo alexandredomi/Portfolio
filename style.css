@@ -86,9 +86,6 @@ header .center .container-bamburguer button img{
     height: 30px;
     color: #4d4d4d;
 }
-.center .container-bamburguer .divMenor{
-    width: 30px;
-}
 main{
     width: 100%;
 }
@@ -118,6 +115,7 @@ main #home{
     transition: 0.8s;
 }
 .menuMobile ul{
+    width: 80%;
     list-style: none;
     text-align: center;
     display: flex;
@@ -158,16 +156,16 @@ main #home{
     width: 24px;
 }
 .menuMobile .contateMenuMobile{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 40px;
     background: var(--cor-gradiente-);
     cursor: pointer;
-    box-shadow: var(--shadow-elevation-low);
+    box-shadow: var(--shadow-elevation-medium);
     color: var(--background-preto-escuro);
-    position: absolute;  
+    position: absolute;
     bottom: 30px;
 }
 .flex{
@@ -191,7 +189,7 @@ main #home .center .tituloHome{
     font-size: 40px;
     font-weight: 600;
     padding: 20px 0px 10px;
-    text-align: start;
+    text-align: center;
 }
 main #home .center .tituloHome span{
     font-weight: 600;
@@ -207,13 +205,13 @@ main #home .center p{
     font-size: 22px;
     font-weight: 400;
     max-width: 500px;
-    text-align: start;
+    text-align: center;
 }
 main #home .center .botoesHome{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 main #home .center .colorido{
     font-size: 22px;
@@ -252,7 +250,7 @@ main #projetos .textProjetos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: start;
+    text-align: center;
 }
 main #projetos .textProjetos h2{
     font-size: 40px;
@@ -313,7 +311,7 @@ main #vantagens .textVantagens{
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
-    text-align: start;
+    text-align: center;
 }
 main #vantagens .textVantagens h2{
     font-size: 40px;
@@ -364,7 +362,7 @@ main #vantagens .cardsVantagens .card p{
 main .local{
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center;
 }
 main .local .textLocal{
     padding: 60px 15px 20px 15px;
@@ -408,26 +406,8 @@ main .local .textLocalFinal p{
     header .center .container-bamburguer{
         display: none;
     }
-    main #home .center .tituloHome{
-        text-align: center;
-    }
-    main #home .center p{
-        text-align: center;
-    }
-    main #home .center .botoesHome{
-        align-items: center;
-    }
-    main #projetos .textProjetos{
-        text-align: center;
-    }
     main #vantagens .cardsVantagens .card{
         height: 400px;
         justify-content: start;
-    }
-    main #vantagens .textVantagens{
-        text-align: center;
-    }
-    main .local{
-        text-align: center;
     }
 }

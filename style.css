@@ -105,6 +105,7 @@ main #home{
     background-color: var(--background-branco-menu-mobile);
     box-shadow: var(--shadow-elevation-high);
     width: 60%;
+    max-width: 380px;
     height: 100%;
     right: 0;
     top: 0;
@@ -128,6 +129,10 @@ main #home{
     color: #161513;
     font-size: 22px;
     font-weight: 600;
+    transition: 0.4s;
+}
+.menuMobile ul li a:hover{
+    color: #383838;
 }
 .menuMobile .containerBtnClose{
     width: 100%;
@@ -144,16 +149,16 @@ main #home{
 }
 .menuMobile ul div{
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: end;
+    gap: 15px;
     border-bottom: solid 1px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 .menuMobile ul div img{
-    width: 30px;
+    width: 24px;
 }
 .menuMobile .contateMenuMobile{
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     border: none;
     padding: 10px 20px;
@@ -218,11 +223,11 @@ main #home .center .colorido{
     border-radius: 40px;
     background: var(--cor-gradiente-);
     cursor: pointer;
-    box-shadow: var(--shadow-elevation-low);
+    box-shadow: var(--shadow-elevation-medium);
     color: var(--background-preto-escuro);
 }
 main #home .center .colorido:hover{
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-high);
     transition: 0.4s;
 }
 main #home .center button{
@@ -234,9 +239,10 @@ main #home .center button{
     border: solid 1px var(--background-preto-escuro);
     margin: 10px 5px;
     color: var(--background-preto-escuro);
+    box-shadow: var(--shadow-elevation-medium);
 }
 main #home .center button:hover{
-    box-shadow: var(--shadow-elevation-medium);
+    box-shadow: var(--shadow-elevation-high);
     transition: 0.4s;
 }
 main #projetos{
@@ -246,7 +252,6 @@ main #projetos .textProjetos{
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     text-align: start;
 }
 main #projetos .textProjetos h2{
@@ -278,6 +283,10 @@ main #projetos .cardsProjetos .card{
     /* padding: 20px 10px; */
     background-color: var(--background-branco-claro);
     box-shadow: var(--shadow-elevation-medium);
+    transition: 0.4s;
+}
+main #projetos .cardsProjetos .card:hover{
+    box-shadow: var(--shadow-elevation-high);
 }
 main #projetos .cardsProjetos .card img{
     width: 100%;
@@ -332,13 +341,15 @@ main #vantagens .cardsVantagens .card{
     max-width: 350px;
     display: flex;
     flex-direction: column;
-    /* align-items: center;
-    text-align: center; */
     gap: 15px;
     border: solid 1px var(--background-preto-claro);
     border-radius: 20px;
     padding: 40px 20px;
     box-shadow: var(--shadow-elevation-medium);
+    transition: 0.4s;
+}
+main #vantagens .cardsVantagens .card:hover{
+    box-shadow: var(--shadow-elevation-high);
 }
 main #vantagens .cardsVantagens .card img{
     width: 40px;
@@ -354,7 +365,6 @@ main .local{
     display: flex;
     flex-direction: column;
     text-align: start;
-
 }
 main .local .textLocal{
     padding: 60px 15px 20px 15px;
@@ -377,8 +387,47 @@ main .local .textLocalFinal p{
     padding: 20px 15px 60px 15px;
 }
 @media screen and (min-width: 760px) {
+    header .center ul{
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    header .center ul li a{
+        color: var(--background-preto-escuro);
+        text-decoration: none;
+        transition: 1s;
+    }
+    header .center ul li a:hover{
+        background-image: var(--cor-gradiente-);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    header .center .container-bamburguer{
+        display: none;
+    }
+    main #home .center .tituloHome{
+        text-align: center;
+    }
+    main #home .center p{
+        text-align: center;
+    }
+    main #home .center .botoesHome{
+        align-items: center;
+    }
+    main #projetos .textProjetos{
+        text-align: center;
+    }
     main #vantagens .cardsVantagens .card{
         height: 400px;
         justify-content: start;
+    }
+    main #vantagens .textVantagens{
+        text-align: center;
+    }
+    main .local{
+        text-align: center;
     }
 }

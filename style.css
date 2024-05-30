@@ -1,6 +1,6 @@
 :root{
     --background-branco-escuro: #f0f2f5;
-    --background-branco-menu-mobile: #f0f2f5f3;
+    --background-branco-menu-mobile: #f0f2f5;
     --background-branco-claro: #ffffff;
     --background-preto-claro: #1c1c22;
     --background-preto-escuro: #161513;
@@ -52,7 +52,9 @@ header .center{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 15px;
+    padding: 25px 20px;
+    max-width: 1280px;
+    margin: 0px auto;
 }
 header .center ul{
     display: none;
@@ -174,9 +176,14 @@ main #home{
 main #home .center{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    text-align: center;
+    text-align: start;
+}
+main #home .center .img-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 main #home .center img{
     width: 180px;
@@ -189,7 +196,6 @@ main #home .center .tituloHome{
     font-size: 40px;
     font-weight: 600;
     padding: 20px 0px 10px;
-    text-align: center;
 }
 main #home .center .tituloHome span{
     font-weight: 600;
@@ -204,14 +210,12 @@ main #home .center p{
     padding: 25px 0px;
     font-size: 22px;
     font-weight: 400;
-    max-width: 500px;
-    text-align: center;
 }
 main #home .center .botoesHome{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 main #home .center .colorido{
     font-size: 22px;
@@ -249,8 +253,7 @@ main #projetos{
 main #projetos .textProjetos{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    text-align: start;
 }
 main #projetos .textProjetos h2{
     font-size: 40px;
@@ -265,7 +268,6 @@ main #projetos .textProjetos h2 span{
 }
 main #projetos .textProjetos p{
     font-size: 22px;
-    max-width: 800px;
 }
 main #projetos .cardsProjetos{
     display: flex;
@@ -278,7 +280,6 @@ main #projetos .cardsProjetos .card{
     width: 90%;
     max-width: 400px;
     border-radius: 12px;
-    /* padding: 20px 10px; */
     background-color: var(--background-branco-claro);
     box-shadow: var(--shadow-elevation-medium);
     transition: 0.4s;
@@ -311,7 +312,7 @@ main #vantagens .textVantagens{
     display: flex;
     flex-direction: column;
     padding: 0px 15px;
-    text-align: center;
+    text-align: start;
 }
 main #vantagens .textVantagens h2{
     font-size: 40px;
@@ -365,7 +366,7 @@ main .local{
     text-align: center;
 }
 main .local .textLocal{
-    padding: 60px 15px 20px 15px;
+    padding: 60px 15px 50px 15px;
 }
 main .local .textLocal h2{
     font-size: 40px;
@@ -382,9 +383,44 @@ main .local .mapaLocal{
 main .local .textLocalFinal p{
     display: flex;
     justify-content: center;
-    padding: 20px 15px 60px 15px;
+    padding: 40px 15px 60px 15px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 550px) {
+    main #home .center{
+        align-items: center;
+    }
+    main #home .center .tituloHome{
+        text-align: center;
+    }
+    main #home .center p{
+        text-align: center;
+        max-width: 70%;
+    }
+    main #home .center .botoesHome{
+        align-items: center;
+    }
+    main #projetos .textProjetos{
+        text-align: center;
+        align-items: center;
+    }
+    main #projetos .textProjetos h2 span{
+        text-align: center;
+    }
+    main #projetos .textProjetos p{
+         max-width: 70%;
+    }
+    main #vantagens .textVantagens{
+        text-align: center;
+    }
+    main #vantagens .textVantagens p{
+        max-width: 70%;
+    }
+    main #vantagens .cardsVantagens .card{
+        height: 400px;
+        justify-content: start;
+    }
+}
+@media screen and (min-width: 980px){
     header .center ul{
         display: flex;
         gap: 20px;
@@ -405,9 +441,5 @@ main .local .textLocalFinal p{
     }
     header .center .container-bamburguer{
         display: none;
-    }
-    main #vantagens .cardsVantagens .card{
-        height: 400px;
-        justify-content: start;
     }
 }

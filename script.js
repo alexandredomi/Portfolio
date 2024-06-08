@@ -9,3 +9,5 @@ btnMenuOpen.addEventListener("click", function() {
 btnMenuClose.addEventListener("click", function() {
     menuMobile.classList.remove("flex")
 })
+
+ 

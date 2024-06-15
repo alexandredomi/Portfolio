@@ -67,7 +67,7 @@ header .center .logo h1{
     -webkit-text-fill-color: transparent;
 }
 header .center .logo h1 span{
-    font-weight: 800;
+    font-weight: 600;
 }
 header .center .container-bamburguer{
     display: flex;
@@ -84,8 +84,8 @@ header .center .container-bamburguer button{
     background-color: transparent;
 }
 header .center .container-bamburguer button img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     color: var(--background-preto-escuro);
 }
 main{
@@ -146,7 +146,7 @@ main #home{
     background-color: transparent;
 }
 .menuMobile .containerBtnClose button img{
-    width: 30px;
+    width: 25px;
     margin-right: 8px;
     color: var(--background-preto-claro);
 }
@@ -218,6 +218,7 @@ main #home .center .botoesHome{
     display: flex;
     flex-direction: column;
     align-items: start;
+
 }
 main #home .center .colorido{
     font-size: 22px;
@@ -229,6 +230,7 @@ main #home .center .colorido{
     cursor: pointer;
     box-shadow: var(--shadow-elevation-medium);
     color: var(--background-preto-escuro);
+    text-decoration: none;
 }
 main #home .center .colorido:hover{
     box-shadow: var(--shadow-elevation-high);
@@ -245,7 +247,7 @@ main #home .center a{
     color: var(--background-preto-escuro);
     box-shadow: var(--shadow-elevation-medium);
 }
-main #home .center button:hover{
+main #home .center a1:hover{
     box-shadow: var(--shadow-elevation-high);
     transition: 0.4s;
 }
@@ -398,15 +400,6 @@ main .local .textLocal a{
     border-radius: 15px;
     max-width: 200px;
     cursor: pointer;
-}
-main .local .textLoca .whats{
- 
-}
-main .local .textLoca .insta{
-
-}
-main .local .textLoca .face{
-
 }
 main .local .textLocal .cell{
     display: flex;

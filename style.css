@@ -5,9 +5,8 @@
     --background-preto-claro: #1c1c22;
     --background-preto-escuro: #161513;
     --cor-icones-bgbranco-: #4d4d4d;
-
     --cor-gradiente-:linear-gradient(90deg, rgba(177,108,234,1) 20%, rgba(255,94,105,1) 40%, rgba(255,138,86,1) 60%, rgba(255,168,75,1) 80%);;
-
+    /*BOX SHADOW*/
     --shadow-color: 0deg 0% 59%;
     --shadow-elevation-low:
         0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),

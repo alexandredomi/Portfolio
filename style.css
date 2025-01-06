@@ -86,6 +86,9 @@ main{
     width: 100%;
     align-items: center;
 }
+.center{
+    max-width: 1280px;
+}
 .linha{
     background-color: var(--background-preto-escuro);
     width: 90%;
@@ -309,12 +312,6 @@ main #projetos .cardsProjetos .card .cardText h3{
 main #projetos .cardsProjetos .card .cardText p{
     font-size: 20px;
 }
-main #vantagens{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1280px;
-}
 main #vantagens .textVantagens{
     display: flex;
     flex-direction: column;
@@ -331,16 +328,36 @@ main #vantagens .textVantagens h2 span{
     -webkit-text-fill-color: transparent;
 }
 main #vantagens{
+    width: 100%;
     background-color: var(--background-branco-claro);
     padding: 60px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
 }
 main #vantagens .cardsVantagens{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    row-gap: 40px;
     padding: 50px 0px;
+}
+main #vantagens .cardsVantagens div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+}
+main #vantagens .cardsVantagens div i{
+    font-size: 60px;
+}
+main #vantagens .cardsVantagens div i:hover{
+    position: relative;
+    top: -10px;
+    transition: 0.5s;
+    color: var(--cor-icones-bgbranco-);
 }
 main .local{
     display: flex;
@@ -356,7 +373,11 @@ main .local .textLocal{
     gap: 25px;
 }
 main .local .textLocal h2{
+    width: 100%;
     font-size: 40px;
+}
+main .local .textLocal p{
+    width: 100%;
 }
 main .local .textLocal h2 span{
     background-image: var(--cor-gradiente-);
@@ -400,6 +421,29 @@ main .local .mapaLocal{
     main #vantagens .cardsVantagens .card{
         height: 400px;
         justify-content: start;
+    }
+    main .local .textLocal{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 15px 60px 15px;
+        gap: 25px;
+    }
+    main .local .textLocal div{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+    }
+    main .local .textLocal h2{
+        width: 100%;
+        font-size: 40px;
+    }
+    main .local .textLocal p{
+        width: 100%;
+    }
+    .textLocalFinal{
+        margin-bottom: 60px;
     }
 }
 @media screen and (min-width: 980px){

@@ -8,15 +8,8 @@
     --cor-gradiente-:linear-gradient(90deg, rgba(177,108,234,1) 20%, rgba(255,94,105,1) 40%, rgba(255,138,86,1) 60%, rgba(255,168,75,1) 80%);;
     /*BOX SHADOW*/
     --shadow-color: 0deg 0% 59%;
-    --shadow-elevation-low:
-        0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
-        0px 0.4px 0.5px -1.2px hsl(var(--shadow-color) / 0.34),
-        0px 1.1px 1.2px -2.5px hsl(var(--shadow-color) / 0.34);
-    --shadow-elevation-medium:
-        0px 0.3px 0.3px hsl(var(--shadow-color) / 0.36),
-        0px 0.9px 1px -0.8px hsl(var(--shadow-color) / 0.36),
-        0px 2.2px 2.5px -1.7px hsl(var(--shadow-color) / 0.36),
-        0.1px 5.3px 6px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-low:rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    --shadow-elevation-medium:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     --shadow-elevation-high:
         0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34),
         0px 1.5px 1.7px -0.4px hsl(var(--shadow-color) / 0.34),
@@ -88,22 +81,27 @@ header .center .container-bamburguer button img{
     color: var(--background-preto-escuro);
 }
 main{
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
 }
 .linha{
     background-color: var(--background-preto-escuro);
     width: 90%;
+    max-width: 1280px;
     height: 1px;
     margin: 0px auto;
 }
 main #home{
     padding: 110px 15px 60px;
+    max-width: 1280px;
 }
 .menuMobile{
     background-color: var(--background-branco-menu-mobile);
     box-shadow: var(--shadow-elevation-high);
     width: 70%;
-    min-width: 250px;
+    max-width: 350px;
     height: 100%;
     right: 0;
     top: 0;
@@ -227,12 +225,12 @@ main #home .center .colorido{
     border-radius: 40px;
     background: var(--cor-gradiente-);
     cursor: pointer;
-    box-shadow: var(--shadow-elevation-medium);
     color: var(--background-preto-escuro);
+    box-shadow: var(--shadow-elevation-low);
     text-decoration: none;
 }
-main #home .center .colorido:hover{
-    box-shadow: var(--shadow-elevation-high);
+main #home .center .colorido:hover, main #home .center a:hover{
+    box-shadow: var(--shadow-elevation-medium);
     transition: 0.4s;
 }
 main #home .center a{
@@ -244,14 +242,13 @@ main #home .center a{
     border: solid 1px var(--background-preto-escuro);
     margin: 10px 5px;
     color: var(--background-preto-escuro);
-    box-shadow: var(--shadow-elevation-medium);
-}
-main #home .center a1:hover{
-    box-shadow: var(--shadow-elevation-high);
-    transition: 0.4s;
+    box-shadow: var(--shadow-elevation-low);
+    cursor: pointer;
+    text-decoration: none;
 }
 main #projetos{
     padding: 30px 15px;
+    max-width: 1280px;
 }
 main #projetos .textProjetos{
     display: flex;
@@ -282,14 +279,16 @@ main #projetos .cardsProjetos{
 }
 main #projetos .cardsProjetos .card{
     width: 90%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 12px;
     background-color: var(--background-branco-claro);
-    box-shadow: var(--shadow-elevation-medium);
-    transition: 0.4s;
+    box-shadow: var(--shadow-elevation-low);
+    transition: 0.2s;
+    cursor: pointer;
 }
 main #projetos .cardsProjetos .card:hover{
     box-shadow: var(--shadow-elevation-high);
+    transition: 0.4s;
 }
 main #projetos .cardsProjetos .card img{
     width: 100%;
@@ -313,6 +312,8 @@ main #projetos .cardsProjetos .card .cardText p{
 main #vantagens{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 1280px;
 }
 main #vantagens .textVantagens{
     display: flex;
@@ -341,40 +342,13 @@ main #vantagens .cardsVantagens{
     gap: 40px;
     padding: 50px 0px;
 }
-main #vantagens .cardsVantagens .card{
-    width: 85%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-    border: solid 1px var(--background-preto-claro);
-    border-radius: 20px;
-    padding: 40px 20px;
-    box-shadow: var(--shadow-elevation-medium);
-    transition: 0.4s;
-}
-main #vantagens .cardsVantagens .card:hover{
-    box-shadow: var(--shadow-elevation-high);
-}
-main #vantagens .cardsVantagens .card img{
-    width: 40px;
-    padding: 0px;
-}
-main #vantagens .cardsVantagens .card h3{
-    font-size: 28px;
-}
-main #vantagens .cardsVantagens .card p{
-    font-size: 20px;
-    color: var(--cor-icones-bgbranco-);
-}
 main .local{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 main .local .textLocal{
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -384,27 +358,6 @@ main .local .textLocal{
 main .local .textLocal h2{
     font-size: 40px;
 }
-main .local .textLocal {
-    font-size: 20px;
-}
-main .local .textLocal a{
-    display: flex;
-    gap: 15px;
-    text-decoration: none;
-    color: #1c1c22;
-    font-size: 22px;
-    font-weight: 500;
-    border: solid var(--background-preto-claro);
-    padding: 10px;
-    border-radius: 15px;
-    max-width: 200px;
-    cursor: pointer;
-}
-main .local .textLocal .cell{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
 main .local .textLocal h2 span{
     background-image: var(--cor-gradiente-);
     background-clip: text;
@@ -413,11 +366,6 @@ main .local .textLocal h2 span{
 }
 main .local .mapaLocal{
     width: 100%; 
-}
-main .local .textLocalFinal p{
-    display: flex;
-    justify-content: center;
-    padding: 40px 15px 60px 15px;
 }
 @media screen and (min-width: 550px) {
     main #home .center{

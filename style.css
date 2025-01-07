@@ -288,6 +288,7 @@ main #projetos .cardsProjetos .card{
     box-shadow: var(--shadow-elevation-low);
     transition: 0.2s;
     cursor: pointer;
+    text-decoration: none;
 }
 main #projetos .cardsProjetos .card:hover{
     box-shadow: var(--shadow-elevation-high);
@@ -354,8 +355,6 @@ main #vantagens .cardsVantagens div i{
     font-size: 60px;
 }
 main #vantagens .cardsVantagens div i:hover{
-    position: relative;
-    top: -10px;
     transition: 0.5s;
     color: var(--cor-icones-bgbranco-);
 }
@@ -370,7 +369,7 @@ main .local .textLocal{
     display: flex;
     flex-direction: column;
     text-align: start;
-    padding: 60px 0px 50px 0px;
+    padding: 60px 20px 50px 20px;
     gap: 25px;
 }
 main .local .textLocal div{
@@ -379,6 +378,12 @@ main .local .textLocal div{
     flex-direction: column;
     text-align: start;
     gap: 25px;
+}
+main .local .textLocal div .whats, .insta, .face ,.cell {
+    gap: 10px;
+    text-decoration: none;
+    color: #161513;
+    cursor: pointer;
 }
 main .local .textLocal h2{
     width: 100%;
@@ -430,12 +435,15 @@ main .local .mapaLocal{
         height: 400px;
         justify-content: start;
     }
+    main .local .center{
+        margin: 0px auto;
+    }
     main .local .textLocal{
         width: 100%;
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 60px 15px 60px 15px;
+        padding: 60px 20px 60px 20px;
         gap: 25px;
         margin: 0px auto;
     }
@@ -444,14 +452,28 @@ main .local .mapaLocal{
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         gap: 20px;
+    }
+    main .local .textLocal div .whats, .insta, .face ,.cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #161513;
+        cursor: pointer;
+    }
+    main .local .textLocal div .whats:hover, .insta:hover, .face:hover ,.cell:hover{
+        color:#4d4d4d;
+        transition: 0.4s;
+    }
+    main .local .textLocal div .whats i, .insta i, .face i,.cell i{
+        font-size: 24px;
     }
     main .local .textLocal h2{
         width: 100%;
         font-size: 40px;
-    }
-    main .local .textLocal p{
-        width: 100%;
     }
     .textLocalFinal{
         margin-bottom: 60px;

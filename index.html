@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <!--icone da pagina-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
+    <!--CDN icone favicon-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
-
+    <!--font awesome CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!--aos js CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -29,7 +29,7 @@
                 <li><a href="">Contato</a></li>
             </ul>
             <div class="container-bamburguer">
-                <button id="btnMenuOpen"><img src="assets/menu-de-hamburguer.svg" alt=""></button>
+                <button id="btnMenuOpen"><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </header>
@@ -37,13 +37,16 @@
         <section id="home">
             <div class="menuMobile">
                 <div class="containerBtnClose">
-                    <button id="btnMenuClose"><img src="assets/x.png" alt="">
+                    <button id="btnMenuClose">
+                        <i id="X" class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
                 <ul>
                     <div>
                         <img src="assets/casa.svg" alt="">
-                        <li><a href="#home">Inicio</a></li>
+                        <li>
+                            <a href="#home">Inicio</a>
+                        </li>
                     </div>
                     <div>
                         <img src="assets/editar-alt.svg" alt="">
@@ -69,7 +72,7 @@
                 </div>
                 <p class="tituloHome"><span>Olá, sou Alexandre </span> <br>Desenvolvedor Web.</p>
 
-                <p>Técnico em manutenção com mais de 7 anos de experiência em reparos de smartphones e tablets, auxiliando o time de vendas de eletrônicos. Realizo manutenção completa, incluindo hardware e software, e também possuo conhecimentos em formatação e montagem de computadores. Atualmente, estou em transição para a área de programação, com foco na área de Front-End. Motivado por desafios e pelo aprendizado contínuo, busco consolidar minha carreira como desenvolvedor.</p>
+                <p>Técnico em manutenção com mais de 7 anos de experiência em reparos de smartphones. Atualmente, estou em transição para a área de programação, com foco na área de Front-End. Motivado por desafios e pelo aprendizado contínuo, busco consolidar minha carreira como desenvolvedor.</p>
                 <div class="botoesHome">
                     <a data-aos="fade-left"
                     data-aos-anchor="#example-anchor"

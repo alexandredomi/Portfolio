@@ -81,6 +81,12 @@ header .center .container-bamburguer button img{
     height: 30px;
     color: var(--background-preto-escuro);
 }
+.fa-solid{
+    font-size: 30px;
+}
+#X{
+    padding-right: 11px;
+}
 main{
     display: flex;
     flex-direction: column;
@@ -110,7 +116,7 @@ main #home{
     right: 0;
     top: 0;
     position: fixed;
-    z-index: 5;
+    z-index: 110;
     display: none;
     flex-direction: column;
     align-items: center;

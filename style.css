@@ -39,6 +39,7 @@ header{
     position: fixed;
     width: 100%;
     box-shadow: var(--shadow-elevation-low);
+    z-index: 100;
 }
 header .center{
     display: flex;

@@ -13,6 +13,8 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css'>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -59,15 +61,26 @@
                 <!-- <button class="contateMenuMobile">CONTATE ME</button> -->
             </div>
             <div class="center">
-                <div class="img-home">
+                <div data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                class="img-home">
                     <img src="assets/fotos/Assunto1-removebg-preview.png" alt="">
                 </div>
                 <p class="tituloHome"><span>Olá, sou Alexandre </span> <br>Desenvolvedor Web.</p>
 
                 <p>Aqui você encontrará os projetos que desenvolvi, mostrando minha jornada de aprendizado e minha dedicação ao desenvolvimento de soluções elegantes e funcionais.</p>
                 <div class="botoesHome">
-                    <a href="https://wa.me/53984415919" class="colorido" target="_blank">ENTRAR EM CONTATO</a>
-                    <a href="#projetos" >VER MEU TRABALHO</a>
+                    <a data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                    href="https://wa.me/53984415919" class="colorido" target="_blank">ENTRAR EM CONTATO</a>
+                    <a data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
+                    href="#projetos" >VER MEU TRABALHO</a>
                 </div>
             </div>
         </section>
@@ -103,7 +116,10 @@
                 <h2>Meus <span>Projetos</span></h2>
             </div>
             <div class="cardsProjetos">
-                <a href="https://alexandredomi.github.io/Jhonatan-Specter/" target="_blank" class="card">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                href="https://alexandredomi.github.io/Jhonatan-Specter/" target="_blank" class="card">
                     <div class="cardImg">
                         <img src="assets/projetos/Screenshot_1.png" alt="">
                     </div>
@@ -112,7 +128,10 @@
                         <p>Landing page de serviços.</p>
                     </div>
                 </a>
-                <a href="https://alexandredomi.github.io/maker-pre-launch-landing-page/" target="_blank" class="card">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                href="https://alexandredomi.github.io/maker-pre-launch-landing-page/" target="_blank" class="card">
                     <div class="cardImg">
                         <img src="assets/projetos/Screenshot_4.png" alt="">
                     </div>
@@ -121,7 +140,10 @@
                         <p>Landing page de serviços de assinatura.</p>
                     </div>
                 </a>
-                <a href="https://alexandredomi.github.io/social-links/" target="_blank" class="card">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                href="https://alexandredomi.github.io/social-links/" target="_blank" class="card">
                     <div class="cardImg">
                         <img src="assets/projetos/Screenshot_3.png" alt="">
                     </div>
@@ -130,7 +152,10 @@
                         <p>Landing page de direcinamento por links.</p>
                     </div>
                 </a>
-                <a href="" target="_blank" class="card">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                href="" target="_blank" class="card">
                     <div class="cardImg">
                         <img src="assets/projetos/Screenshot_2.png" alt="">
                     </div>
@@ -139,7 +164,10 @@
                         <p>Landing page de serviços demonstracao de resultado.</p>
                     </div>
                 </a>
-                <a href="https://alexandredomi.github.io/calculadora-IMC/" target="_blank" class="card">
+                <a data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                href="https://alexandredomi.github.io/calculadora-IMC/" target="_blank" class="card">
                     <div class="cardImg">
                         <img src="assets/projetos/Captura de tela 2025-01-05 211515.png" alt="">
                     </div>
@@ -193,6 +221,10 @@
         btnMenuClose.addEventListener("click", function() {
             menuMobile.classList.remove("flex")
         })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
     </script>
 </body>
 </html>

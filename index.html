@@ -43,22 +43,25 @@
                 </div>
                 <ul>
                     <div>
-                        <img src="assets/casa.svg" alt="">
-                        <li>
-                            <a href="#home">Inicio</a>
-                        </li>
+                        <i class="fa-solid fa-house"></i>
+                        <li><a href="#home">Inicio</a></li>
                     </div>
                     <div>
-                        <img src="assets/editar-alt.svg" alt="">
+                        <i class="fa-solid fa-diagram-project"></i>
                         <li><a href="#projetos">Projetos</a></li>
                     </div>
                     <div>
-                        <img src="assets/do-utilizador.svg" alt=""><li>
-                            <a href="#sobre mim">Sobre mim</a></li>
+                        <i class="fa-solid fa-address-card"></i>
+                            <li><a href="#sobre mim">Sobre mim</a></li>
                     </div>
                     <div>
-                        <img src="assets/saco-de-dolar.svg" alt="">
+                        <i class="fa-solid fa-wrench"></i>
                         <li><a href="#vantagens">Tecnologia</a></li>
+                    </div> 
+                    <div>
+                        <i class="fa-solid fa-file"></i>
+                        <li><a href="assets/projetos/Currículo Tecnico.pdf"
+                            target="_blank">Curriculo</a></li>
                     </div> 
                 </ul>
                 <!-- <button class="contateMenuMobile">CONTATE ME</button> -->
@@ -78,12 +81,21 @@
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
                     data-aos-duration="500"
-                    href="https://wa.me/53984415919" class="colorido" target="_blank">ENTRAR EM CONTATO</a>
+                    href="https://wa.me/53984415919" 
+                    class="colorido" 
+                    target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    ENTRAR EM CONTATO
+                    </a>
                     <a data-aos="fade-left"
                     data-aos-anchor="#example-anchor"
                     data-aos-offset="500"
                     data-aos-duration="500"
-                    href="#projetos" >VER MEU TRABALHO</a>
+                    href="assets/projetos/Currículo Tecnico.pdf"
+                    target="_blank">
+                    <i class="fa-regular fa-file"></i>
+                    MEU CURRICULO
+                    </a>
                 </div>
             </div>
         </section>
@@ -195,24 +207,12 @@
                     </div>
                 </div>
             </div>
-            <div class="textLocalFinal">
-                <p>R. Gen. Osório, 555 - Centro, Pelotas - RS, 96020-000</p>
-            </div>
         </section>
+        <footer>
+            <p>© 2025 Todos os direitos reservados. | Dev Alexandre</p>
+        </footer>
     </main>
-
-    <script>
-        const btnMenuOpen = document.querySelector("#btnMenuOpen")
-        const btnMenuClose = document.querySelector("#btnMenuClose")
-        const menuMobile = document.querySelector(".menuMobile")
-
-        btnMenuOpen.addEventListener("click", function() {
-            menuMobile.classList.add("flex")
-        })
-        btnMenuClose.addEventListener("click", function() {
-            menuMobile.classList.remove("flex")
-        })
-    </script>
+    <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();

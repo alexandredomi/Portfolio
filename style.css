@@ -211,9 +211,10 @@ main #home .center .tituloHome{
     font-size: 40px;
     font-weight: 600;
     padding: 20px 0px 10px;
+    color: black;
 }
 main #home .center .tituloHome span{
-    font-weight: 600;
+    font-weight: 700;
     background-image: var(--cor-gradiente-);
     background-clip: text;
     -webkit-background-clip: text;

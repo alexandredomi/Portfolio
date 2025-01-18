@@ -24,8 +24,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    font-style: normal; 
+    font-family: "Poppins", serif;
 }
 html{
     scroll-behavior: smooth;

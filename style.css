@@ -37,7 +37,7 @@ header{
     background-color: var(--background-branco-escuro);
     position: fixed;
     width: 100%;
-    box-shadow: var(--shadow-elevation-low);
+    /* box-shadow: var(--shadow-elevation-low); */
     z-index: 100;
 }
 header .center{
@@ -81,7 +81,7 @@ header .center .container-bamburguer button img{
     color: var(--background-preto-escuro);
 }
 .fa-solid{
-    font-size: 30px;
+    font-size: 32px;
     color: #161513;
 }
 #X{
@@ -201,14 +201,13 @@ main #home .center .img-home{
     justify-content: center;
 }
 main #home .center img{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin: 30px 0px 20px;
-    box-shadow: var(--shadow-elevation-medium);
 }
 main #home .center .tituloHome{
-    font-size: 40px;
+    font-size: 42px;
     font-weight: 600;
     padding: 20px 0px 10px;
     color: black;
@@ -225,14 +224,14 @@ main #home .center .tituloHome span{
 main #home .center p{
     padding: 25px 0px;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--cor-icones-bgbranco-);
 }
 main #home .center .botoesHome{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 main #home .center .botoesHome a{
     display: flex;

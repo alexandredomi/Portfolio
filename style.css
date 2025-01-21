@@ -292,6 +292,7 @@ main #projetos .textProjetos h2 span{
 }
 main #projetos .textProjetos p{
     font-size: 22px;
+    padding: 22px 0px;
     font-weight: 500;
     color: var(--cor-icones-bgbranco-);
 }
@@ -432,6 +433,10 @@ main .local .textLocal h2{
 }
 main .local .textLocal p{
     width: 100%;
+    padding: 22px 0px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--cor-icones-bgbranco-);
 }
 main .local .textLocal h2 span{
     background-image: var(--cor-gradiente-);

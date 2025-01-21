@@ -24,7 +24,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
+    font-family: "Bai Jamjuree", serif;
 }
 html{
     scroll-behavior: smooth;
@@ -232,10 +232,11 @@ main #home .center .botoesHome{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
 }
 main #home .center .botoesHome a{
     display: flex;
+    align-items: center;
     gap: 10px;
 
 }

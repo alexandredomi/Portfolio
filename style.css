@@ -37,7 +37,6 @@ header{
     background-color: var(--background-branco-escuro);
     position: fixed;
     width: 100%;
-    /* box-shadow: var(--shadow-elevation-low); */
     z-index: 100;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
@@ -83,11 +82,8 @@ header .center .container-bamburguer button img{
     color: var(--background-preto-escuro);
 }
 .fa-solid{
-    font-size: 32px;
+    font-size: 28px;
     color: #161513;
-}
-#X{
-    padding-right: 11px;
 }
 main{
     display: flex;
@@ -154,16 +150,16 @@ main #home{
     width: 100%;
     display: flex;
     justify-content: end;
-    margin: 10px 0px;
+    margin: 26px 28px 0px 0px;
 }
 .menuMobile .containerBtnClose button{
     border: transparent;
-    padding: 20px 15px 0px 0px;
+    width: 50px;
     background-color: transparent;
 }
-.menuMobile .containerBtnClose button img{
+.menuMobile .containerBtnClose button i{
     width: 25px;
-    margin-right: 8px;
+    font-size: 32px;
     color: var(--background-preto-claro);
 }
 .menuMobile ul div{
@@ -381,13 +377,6 @@ main #vantagens .cardsVantagens div i{
 main #vantagens .cardsVantagens div p{
     font-weight: 500;
 }
-/* main #vantagens .cardsVantagens div i:hover{
-    transition: 0.5s;
-    background-image: var(--cor-gradiente-);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
 main .local{
     width: 100%;
     display: flex;
@@ -488,6 +477,9 @@ footer{
         height: 400px;
         justify-content: start;
     }
+    main #vantagens .cardsVantagens div{
+        width: 180px;
+    }
     main .local .center{
         margin: 0px auto;
     }
@@ -553,5 +545,8 @@ footer{
     }
     header .center .container-bamburguer{
         display: none;
+    }
+    main #vantagens .cardsVantagens div{
+        width: 180px;
     }
 }

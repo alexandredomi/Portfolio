@@ -411,7 +411,7 @@ main .local .textLocal div .whats, .insta, .face ,.cell {
     display: flex;
     align-items: center;
 }
-main .local .textLocal div .whats:hover, .insta:hover, .face:hover{
+main .local .textLocal div .whats:hover, .insta:hover, .face:hover,  .cell:hover{
     transition: 0.4s;
     background-image: var(--cor-gradiente-);
     background-clip: text;

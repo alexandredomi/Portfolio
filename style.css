@@ -57,6 +57,7 @@ header .center .logo h1{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 28px;
 }
 header .center .logo h1 span{
     font-weight: 600;
@@ -276,7 +277,7 @@ main #projetos .textProjetos{
     display: flex;
     flex-direction: column;
     text-align: start;
-}
+} 
 main #projetos .textProjetos h2{
     font-size: 40px;
     padding: 25px 0px;
@@ -290,6 +291,7 @@ main #projetos .textProjetos h2 span{
 }
 main #projetos .textProjetos p{
     font-size: 22px;
+    font-weight: 500;
     color: var(--cor-icones-bgbranco-);
 }
 main #projetos .cardsProjetos{

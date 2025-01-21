@@ -371,18 +371,22 @@ main #vantagens .cardsVantagens div{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: 200px;
+    width: 120px;
 }
 main #vantagens .cardsVantagens div i{
     font-size: 60px;
+    color: #383838;
 }
-main #vantagens .cardsVantagens div i:hover{
+main #vantagens .cardsVantagens div p{
+    font-weight: 500;
+}
+/* main #vantagens .cardsVantagens div i:hover{
     transition: 0.5s;
     background-image: var(--cor-gradiente-);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 main .local{
     width: 100%;
     display: flex;

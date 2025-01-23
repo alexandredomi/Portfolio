@@ -423,7 +423,7 @@ main #sobre .w50{
     padding: 20px;
 }
 main #sobre .w50 img{
-    border-radius: 10px;
+    border-radius: 10px; 
     width: 100%;
     max-width: 500px;
 }

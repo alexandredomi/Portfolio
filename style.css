@@ -377,6 +377,45 @@ main #vantagens .cardsVantagens div i{
 main #vantagens .cardsVantagens div p{
     font-weight: 500;
 }
+main #sobre{
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+main #sobre .texto-sobre{
+    width: 100%;
+    padding: 0px 20px;
+}
+main #sobre .texto-sobre h2{
+    font-size: 40px;
+    padding: 25px 0px;
+    max-width: 700px;
+}
+main #sobre .texto-sobre h2 span{
+    background-image: var(--cor-gradiente-);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+main #sobre p{
+    font-size: 22px;
+    padding: 22px 0px;
+    font-weight: 500;
+    color: var(--cor-icones-bgbranco-);
+}
+main #sobre .w50{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+main #sobre .w50 img{
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+}
 main .local{
     width: 100%;
     display: flex;
@@ -477,6 +516,15 @@ footer{
         height: 400px;
         justify-content: start;
     }
+    main #sobre .texto-sobre h2{
+        text-align: center;
+        min-width: 100%;
+    }
+    main #sobre .w50{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
     main #vantagens .cardsVantagens div{
         width: 180px;
     }
@@ -548,5 +596,25 @@ footer{
     }
     main #vantagens .cardsVantagens div{
         width: 180px;
+    }
+    main #sobre{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main #sobre .texto-sobre{
+        width: 100%;
+    }
+    main #sobre .texto-sobre h2{
+        min-width: 100%;
+        padding: 30px 0px;
+    }
+    main #sobre .w50{
+        max-width: 640px;
+    }
+    main #sobre .w50 p{
+        text-align: center;
+        max-width: 875px;
     }
 }

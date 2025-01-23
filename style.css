@@ -32,12 +32,14 @@ html{
 body{
     background-color: var(--background-branco-escuro);
     color: var(--background-preto-escuro);
+    width: 100%;
+    height: 100vh;
 }
 header{
     background-color: var(--background-branco-escuro);
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 header .center{
@@ -89,6 +91,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 100%;
     align-items: center;
 }
 .center{
@@ -333,11 +336,12 @@ main #projetos .cardsProjetos .card .cardText p{
     font-size: 20px;
 }
 main #vantagens{
-    max-width: 1280px;
+    width: 100%;
 }
 main #vantagens .center{
     width: 100%;
     padding: 0px auto;
+    max-width: 1280px;
 }
 main #vantagens .textVantagens{
     display: flex;
@@ -424,11 +428,12 @@ main #sobre .w50 img{
     max-width: 500px;
 }
 main #sobre .w50 p{
-    width: 100%;
+    max-width: 100%;
 }
 main .local{
     width: 100%;
     display: flex;
+    max-width: 1280px;
     flex-direction: column;
     text-align: center;
 }
@@ -447,7 +452,7 @@ main .local .textLocal div{
     text-align: start;
     gap: 25px;
 }
-main .local .textLocal div .whats, .insta, .face ,.cell {
+main .local .textLocal div .whats, .insta, .face ,.cell{
     gap: 10px;
     text-decoration: none;
     color: #161513;
@@ -539,6 +544,8 @@ footer{
         width: 180px;
     }
     main .local .center{
+        width: 100%;
+        max-width: 1280px;
         margin: 0px auto;
     }
     main .local .textLocal{

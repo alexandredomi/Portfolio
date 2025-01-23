@@ -332,6 +332,13 @@ main #projetos .cardsProjetos .card .cardText h3{
 main #projetos .cardsProjetos .card .cardText p{
     font-size: 20px;
 }
+main #vantagens{
+    max-width: 1280px;
+}
+main #vantagens .center{
+    width: 100%;
+    padding: 0px auto;
+}
 main #vantagens .textVantagens{
     display: flex;
     flex-direction: column;
@@ -412,10 +419,12 @@ main #sobre .w50{
     padding: 20px;
 }
 main #sobre .w50 img{
-    
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;
     max-width: 500px;
+}
+main #sobre .w50 p{
+    width: 100%;
 }
 main .local{
     width: 100%;

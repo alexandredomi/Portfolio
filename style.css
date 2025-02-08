@@ -109,10 +109,10 @@ main #home{
     max-width: 1280px;
 }
 .menuMobile{
+    position: relative;
     background-color: var(--background-branco-menu-mobile);
     box-shadow: var(--shadow-elevation-high);
-    width: 70%;
-    max-width: 350px;
+    min-width: 100%;
     height: 100%;
     right: 0;
     top: 0;
@@ -125,11 +125,14 @@ main #home{
     transition: 0.8s;
 }
 .menuMobile ul{
+    position: absolute;
     width: 80%;
+    height: 100%;
     list-style: none;
-    /* text-align: center; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 .menuMobile ul div:hover{
@@ -140,12 +143,12 @@ main #home{
     transition: 0.4s;    
 }
 .menuMobile ul div i{
-    font-size: 20px;
+    font-size: 28px;
 }
 .menuMobile ul li a{
     text-decoration: none;
     color: #161513;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
     transition: 0.4s;
 }

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Freelance</title>
+    <title>Dev Alexandre</title>
+    <!--link arquivo css-->
     <link rel="stylesheet" href="style.css">
     <!--link google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,6 +61,10 @@
                     <div id="closeLinkMenuMobile">
                         <i class="fa-solid fa-wrench"></i>
                         <li><a href="#vantagens">Tecnologia</a></li>
+                    </div>
+                    <div id="closeLinkMenuMobile">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <li><a href="#contato">Contate - me</a></li>
                     </div> 
                     <div id="closeLinkMenuMobile">
                         <i class="fa-solid fa-file"></i>
@@ -186,9 +191,7 @@
                 </a>
             </div>
         </section>
-
         <div class="linha"></div>
-        
         <section id="sobre">
             <div class="texto-sobre">
                 <h2><span>Sobre </span>Mim</h2>
@@ -267,7 +270,7 @@
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 gsap.to(window, {
-                    duration: 1, // Duração da rolagem (em segundos)
+                    duration: 1.7, // Duração da rolagem (em segundos)
                     scrollTo: this.getAttribute('href'), // Alvo da rolagem
                     ease: "power2.inOut" // Easing suave
                 });

@@ -243,6 +243,9 @@ main #home .center .botoesHome a{
     gap: 10px;
 
 }
+main #home .center .botoesHome i{
+    font-size: 28px;
+}   
 main #home .center .colorido{
     font-size: 22px;
     font-weight: 600;
